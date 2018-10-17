@@ -1,0 +1,32 @@
+extends ../layouts/common.pug
+
+block content
+    h1 
+        span Update information of :
+        span &nbsp;
+        span.text-success= user.name
+
+    if errors
+        each error in errors
+            .alert.alert-danger= error
+    form(action="/users/create", method="POST")
+        .form-group
+            input(name="id", type="hidden", value=user.id)
+        .form-group
+            label(for="name") Name
+            input#name.form-control(name="name", type="text", placeholder="Name...", value=user ? user.name : '')
+        
+        .form-group
+            label(for="age") Age
+            input#age.form-control(name="age", type="text", placeholder="Age...", value=user ? user.age : '')
+        
+        .form-group
+            label(for="phone") Phone
+            input#phone.form-control(name="phone", type="text", placeholder="Phone number...", value=user ? user.phone : '')
+        
+        .form-group
+            label(for="address") Address
+            input#address.form-control(name="address", type="text", placeholder="Address...", value=user ? user.address : '')
+        button.btn.btn-primary Save 
+        span &nbsp;
+        a.btn.btn-secondary(href="/users") Cancel

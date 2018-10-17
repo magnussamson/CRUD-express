@@ -1,0 +1,21 @@
+extends ../layouts/common.pug
+
+block content
+    h1 
+        span Information of :
+        span &nbsp;
+        span.text-success= user.name
+
+    table.table
+        tr
+            th ID
+            th Name
+            th Age
+            th Telephone number
+            th Address
+        tr
+            td=user.id
+            td=user.name
+            td=user.age
+            td=user.phone
+            td.address

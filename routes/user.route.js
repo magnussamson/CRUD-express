@@ -8,4 +8,6 @@ route.get('/', userController.index);
 route.get('/search', userController.search);
 route.get('/create', userController.create);
 route.get('/:id', userController.get);
-route.post('/create', userController.postCreate);
+route.get('/update/:id',userController.getUpdate)
+route.post('/update', userController.postUpdate)
+route.post('/create', userController.postCreate) 

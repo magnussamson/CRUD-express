@@ -1,18 +1,25 @@
 {
   "users": [
     {
-      "name": "magnus",
-      "age": "",
-      "phone": "",
+      "name": "Steve",
+      "age": "DIED",
+      "phone": "019283091283",
       "address": "",
-      "id": "YxXpWompa"
+      "id": "4pot1y-WC"
     },
     {
-      "name": "Bill Gate",
-      "age": "",
-      "phone": "",
-      "address": "",
-      "id": "3Zugb5ctN"
+      "id": "Djtt5BXrS",
+      "name": "magnus",
+      "age": "22",
+      "phone": "01292140915",
+      "address": "vietnam"
+    },
+    {
+      "id": "UgF2ad2OR",
+      "name": "Steve",
+      "age": "DIED",
+      "phone": "08888888888",
+      "address": ""
     }
   ]
 }
