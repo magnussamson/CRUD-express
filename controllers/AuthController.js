@@ -9,7 +9,7 @@ module.exports.postLogin = function(req, res, next) {
 
     var user = db.get('users').find({ email: email}).value();
 
-    if( !user) {
+    if (!user) {
         res.render('auth/login', {
             errors: [
                 'User does not exist.'
