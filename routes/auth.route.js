@@ -4,4 +4,5 @@ var authController = require('../controllers/AuthController');
 module.exports = route;
 
 route.get('/', authController.login);
+route.get('/login', authController.login);
 route.post('/login', authController.postLogin);
