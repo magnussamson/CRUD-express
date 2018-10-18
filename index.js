@@ -1,13 +1,13 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-
+var cookieParser = require('cookie-parser');
 var port = 4000;
 var userRoute = require('./routes/user.route');
-
+var authRoute = require('./routes/auth.route');
 var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
-
+app.use(cookieParser());
 app.set('view engine', 'pug');
 app.set('views', './views');
 
@@ -17,6 +17,7 @@ app.get('/', function(req, res) {
 });
 
 app.use('/users', userRoute);
+app.use('/auth', authRoute);
 app.listen(port, function() {
     console.log("example app listening on port " + port);
 });

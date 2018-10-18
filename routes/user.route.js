@@ -5,6 +5,10 @@ var userController = require('../controllers/UserController');
 module.exports = route;
 
 route.get('/', userController.index);
+route.get('/cookie', function(req, res, next) {
+    res.cookie('user-id', 12345);
+    res.send('Hello Dai');
+});
 route.get('/search', userController.search);
 route.get('/create', userController.create);
 route.get('/:id', userController.get);
