@@ -12,8 +12,8 @@ block content
             input#name.form-control(name="name", type="text", placeholder="Name...", value=values ? values.name : '')
         
         .form-group
-            label(for="age") Age
-            input#age.form-control(name="age", type="text", placeholder="Age...", value=values ? values.age : '')
+            label(for="email") Email
+            input#email.form-control(name="email", type="email", placeholder="Email...", value=values ? values.email : '')
         
         .form-group
             label(for="phone") Phone
@@ -22,6 +22,9 @@ block content
         .form-group
             label(for="address") Address
             input#address.form-control(name="address", type="text", placeholder="Address...")
+        .form-group
+            label(for="password") Password
+            input#password.form-control(name="password", type="text", placeholder="Password...")
         button.btn.btn-primary Save 
         span &nbsp;
         a.btn.btn-secondary(href="/users") Cancel

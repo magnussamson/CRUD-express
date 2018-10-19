@@ -3,11 +3,14 @@ module.exports.postCreate = function (req, res, next) {
     if (!req.body.name) {
         errors.push('Name is required.');
     } 
-    if (!req.body.age) {
-        errors.push('Age is required.');
+    if (!req.body.email) {
+        errors.push('Email is required.');
     } 
     if (!req.body.phone) {
         errors.push('Telephone number is required.');
+    } 
+    if (!req.body.password) {
+        errors.push('Password is required.');
     } 
 
     if (errors.length) {
