@@ -1,35 +1,12 @@
 {
   "users": [
     {
-      "name": "Steve",
-      "age": "DIED",
-      "phone": "019283091283",
-      "address": "",
-      "id": "4pot1y-WC"
-    },
-    {
-      "id": "Djtt5BXrS",
-      "name": "magnus",
-      "age": "22",
-      "phone": "01292140915",
-      "address": "vietnam",
+      "name": "Magnus Samson",
       "email": "dangdainguyen.cs@gmail.com",
-      "password": "12345"
-    },
-    {
-      "id": "UgF2ad2OR",
-      "name": "Steve",
-      "age": "DIED",
-      "phone": "08888888888",
-      "address": ""
-    },
-    {
-      "name": "vuong tuyen",
-      "email": "tuyenvuong@gmail.com",
-      "phone": "123456778899",
-      "address": "Hanoi",
-      "password": "827ccb0eea8a706c4c34a16891f84e7b",
-      "id": "LbWdxdj_n"
+      "phone": "01292140915",
+      "address": "154th Nguyen Lan, Phuong Liet, Thanh Xuan",
+      "password": "e10adc3949ba59abbe56e057f20f883e",
+      "id": "njm7cbysC"
     }
   ]
 }
