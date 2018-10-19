@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express = require('express');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
@@ -10,7 +11,7 @@ var authMiddleware = require('./middleware/auth.middleware');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
-app.use(cookieParser('nbjasbdabsdjbasd'));
+app.use(cookieParser(process.env.SESSION_SECRET));
 app.set('view engine', 'pug');
 app.set('views', './views');
 
