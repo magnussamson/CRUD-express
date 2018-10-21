@@ -15,4 +15,4 @@ route.get('/create', userController.create);
 route.get('/:id', userController.get);
 route.get('/update/:id',userController.getUpdate)
 route.post('/update', userController.postUpdate)
-route.post('/create',userValidate.postCreate, userController.postCreate) 
+route.post('/create',userValidate.postCreate, userController.postCreate)  
