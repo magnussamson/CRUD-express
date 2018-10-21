@@ -1,0 +1,20 @@
+extends ../layouts/common.pug
+
+block content
+    
+    h1 Products
+
+    .d-flex.align-items-center    
+        form.ml-auto.d-flex
+            input.form-control(type="text", placeholder="Search", name="searchBox")
+            button.btn.btn-primary.ml-2 Search
+
+    .container
+        .row.justify-content-center
+            for product in products
+                .card.col-md-3.m-3.p-0
+                    img.card-img-top(src=product.src)
+                    .card-body
+                        h5.card-title=product.name
+                        p.card-text=product.content
+                        a.btn.btn-primary(href="") Add to cart
