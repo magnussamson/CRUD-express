@@ -14,7 +14,7 @@ route.get('/cookie', function(req, res, next) {
 });
 route.get('/search', userController.search);
 route.get('/create', userController.create);
-route.get('/:id', userController.get);
+route.get('/view/:id', userController.get);
 route.get('/update/:id',userController.getUpdate)
 route.post('/update', userController.postUpdate)
 route.post('/create', 

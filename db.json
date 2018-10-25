@@ -744,5 +744,26 @@
       "content": "vivamus tortor duis mattis egestas metus aenean fermentum donec ut",
       "price": "$6.28"
     }
+  ],
+  "sessions": [
+    {
+      "id": "NCbbp9Z6p",
+      "cart": {
+        "a41d5308-e2d9-4bea-bfbc-f6f2f5ad02ce": 9,
+        "03169f7f-493c-4cfb-b7a5-7a07f273bc93": 1
+      }
+    },
+    {
+      "id": "vjjv2TIzk"
+    },
+    {
+      "id": "Rs8w5ET5Q"
+    },
+    {
+      "id": "qgob3F11_"
+    },
+    {
+      "id": "rgVGyb-NC"
+    }
   ]
 }
